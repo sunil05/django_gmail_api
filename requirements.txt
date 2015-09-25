@@ -1,0 +1,8 @@
+git+https://github.com/django-nonrel/django@nonrel-1.6
+git+https://github.com/django-nonrel/djangotoolbox
+git+https://github.com/django-nonrel/mongodb-engine
+djangorestframework==3.2.3
+urllib3
+oauth2client
+google-api-python-client
+django-registration-redux
