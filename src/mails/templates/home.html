@@ -1,0 +1,16 @@
+{% block content %}
+
+{% if form.errors %}
+<p>{{form.errors}}</p>
+{% endif %}
+
+<form method="get" action="{% url 'mails.views.search_box' %}">
+  Query:<tr>
+    <input type="text" name="query" value=""><tr>
+  <input type="submit" value="Submit">
+</form>
+
+    {% for msg in mails %}
+        {{ msg | safe }}
+    {% endfor %}
+    {% endblock %}
