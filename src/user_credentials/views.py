@@ -21,7 +21,7 @@ from oauth2client.django_orm import Storage
 # application, including client_id and client_secret, which are found
 # on the API Access tab on the Google APIs
 # Console <http://code.google.com/apis/console>
-CLIENTSECRETS_LOCATION = os.path.join(os.path.dirname(__file__), '..', 'client_secrets.json')
+CLIENTSECRETS_LOCATION = os.path.join(os.path.dirname(__file__), '../..', 'client_secrets.json')
 REDIRECT_URI = 'http://localhost:8000/authorize_app/oauth2callback/'
 SCOPES = [
           'https://www.googleapis.com/auth/gmail.readonly',
